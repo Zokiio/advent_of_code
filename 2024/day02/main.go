@@ -46,11 +46,6 @@ func part2(input string) int {
 			continue
 		}
 
-		if isSafeSequence(level) {
-			totalSafe++
-			continue
-		}
-
 		for i := 0; i < len(level); i++ {
 			newLevel := make([]int, 0, len(level)-1)
 			newLevel = append(newLevel, level[:i]...)
