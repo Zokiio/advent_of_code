@@ -22,6 +22,14 @@ func main() {
 
 	part2Answer := part2(input)
 	fmt.Println("Output:", part2Answer)
+
+	// improvedAnswer
+	part1Refined := findXMAS(input)
+	fmt.Println("refined Output:", part1Refined)
+
+	part2Refined := findMAS(input)
+	fmt.Println("refined Output:", part2Refined)
+
 }
 
 func parseInput(input string) [][]rune {

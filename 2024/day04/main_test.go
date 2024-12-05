@@ -48,3 +48,37 @@ func Test_part2(t *testing.T) {
 		})
 	}
 }
+
+func Test_findXMAS(t *testing.T) {
+	tests := []struct {
+		input string
+		want  int
+	}{
+		{example, 18},
+	}
+	for _, test := range tests {
+		t.Run(test.input, func(t *testing.T) {
+			got := findXMAS(test.input)
+			if got != test.want {
+				t.Errorf("findXMAS() = %v, want %v", got, test.want)
+			}
+		})
+	}
+}
+
+func Test_findMAS(t *testing.T) {
+	tests := []struct {
+		input string
+		want  int
+	}{
+		{example, 9},
+	}
+	for _, test := range tests {
+		t.Run(test.input, func(t *testing.T) {
+			got := findMAS(test.input)
+			if got != test.want {
+				t.Errorf("findMAS() = %v, want %v", got, test.want)
+			}
+		})
+	}
+}
